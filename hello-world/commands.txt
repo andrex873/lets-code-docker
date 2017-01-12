@@ -1,0 +1,11 @@
+# Download the image
+docker run hello-world
+
+# Run a new container
+docker run hello-world
+
+# My own hello docker
+docker run --rm ubuntu:16.04 echo "Hello docker"
+
+# List the folders inside the container
+docker run --rm ubuntu:16.04 ls -la /
