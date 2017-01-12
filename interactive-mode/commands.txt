@@ -1,0 +1,13 @@
+# Add the -i -t options
+
+# Run ubuntu bash
+docker run --rm -it ubuntu:16.04
+
+# Run node js image
+docker run --rm -it node:7-alpine
+
+# Run python image
+docker run --rm -it python:3.5-alpine
+
+# Run PHP image
+docker run --rm -it php:7-alpine
