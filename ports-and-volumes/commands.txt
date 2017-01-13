@@ -1,0 +1,12 @@
+
+# Nginx
+
+# Apache HTTP server
+docker run --rm -p 9980:80 nginx
+docker run -d -p 9980:80 nginx
+docker run -d -P nginx
+docker run -d -P nginx
+
+# Apache Tomcat
+
+# PHP server
