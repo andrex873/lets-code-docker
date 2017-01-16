@@ -1,12 +1,8 @@
 
 # Nginx
+docker run --rm -p 9980:80 nginx
+docker run --rm -p 9980:80 -v $(pwd)/web-template:/usr/share/nginx/html nginx
 
 # Apache HTTP server
-docker run --rm -p 9980:80 nginx
-docker run -d -p 9980:80 nginx
-docker run -d -P nginx
-docker run -d -P nginx
-
-# Apache Tomcat
-
-# PHP server
+docker run --rm -p 9981:80 httpd:2.2-alpine
+docker run --rm -p 9981:80 -v $(pwd)/web-template:/usr/local/apache2/htdocs httpd:2.2-alpine
