@@ -9,3 +9,5 @@ This repository contains the examples for the talk [Lets Code Docker], a simple 
 
 * <https://twitter.com/es_mendez>
 * <https://github.com/andrex873>
+
+[Lets Code Docker]: <https://slides.com/andrex873/lets-code-docker>
