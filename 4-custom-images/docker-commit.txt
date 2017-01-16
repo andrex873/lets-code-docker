@@ -1,0 +1,15 @@
+
+# Run a new container
+docker run -it ubuntu:16.04
+
+# Install thae packages we need.
+apt-get update && apt-get install -y git
+
+# Commit the changes
+docker commit HASH andrex873/ubugit:0.1
+
+# List the images
+docker images
+
+# Validate the new image
+docker run -it andrex873/ubugit:0.1
