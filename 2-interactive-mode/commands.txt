@@ -13,5 +13,5 @@ docker run --rm -it python:3.5-alpine
 docker run --rm -it php:7-alpine
 
 # Run Mysql
-docker run -dit -e --name my_data MYSQL_ROOT_PASSWORD=secret mysql
-docker exec -it my_data bash
+docker run -d --name database -e MYSQL_ROOT_PASSWORD=secret mysql
+docker exec -it database bash
