@@ -6,6 +6,9 @@ docker run --rm -it ubuntu:16.04
 # Run node js image
 docker run --rm -it node:7-alpine
 
+# Run Java image (openjdk)
+docker run -it -v $(pwd):/opt openjdk:9
+
 # Run python image
 docker run --rm -it python:3.5-alpine
 
