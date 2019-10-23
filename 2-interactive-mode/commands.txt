@@ -1,20 +1,20 @@
 # Add the -i -t options
 
 # Run ubuntu bash
-docker run --rm -it ubuntu:16.04
+docker run --rm -it ubuntu:18.04
 
 # Run node js image
 docker run --rm -it node:7-alpine
 
 # Run Java image (openjdk)
-docker run -it -v $(pwd):/opt openjdk:9
+docker run -it -v $(pwd):/app openjdk:11
+
+# Run Mysql
+docker run --rm -d --name database -e MYSQL_ROOT_PASSWORD=secret mysql
+docker exec -it database bash
 
 # Run python image
 docker run --rm -it python:3.5-alpine
 
 # Run PHP image
 docker run --rm -it php:7-alpine
-
-# Run Mysql
-docker run -d --name database -e MYSQL_ROOT_PASSWORD=secret mysql
-docker exec -it database bash

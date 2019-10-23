@@ -1,15 +1,15 @@
 
 # Run a new container
-docker run -it ubuntu:16.04
+docker run -it ubuntu:18.04
 
-# Install thae packages we need.
-apt-get update && apt-get install -y git
+# Install the packages we need.
+apt update && apt install -y cowsay
 
 # Commit the changes
-docker commit HASH andrex873/ubugit:0.1
+docker commit [HASH|NAME] cow:0.1
 
 # List the images
 docker images
 
 # Validate the new image
-docker run -it andrex873/ubugit:0.1
+docker run --rm -it cow:0.1

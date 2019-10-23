@@ -1,11 +1,11 @@
 ################################################################################
 # Dockerfile
 #
-# docker build -f docker-file.txt -t andrex873/ubugit:0.2 .
+# docker build -f docker-file.txt -t cow:0.2 .
 ################################################################################
 
 # Base Image
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # Install the packages
-RUN apt-get update && apt-get install -y git
+RUN apt update && apt install -y cowsay

@@ -1,8 +1,10 @@
+# Use the -p option to expose ports
+# Use the -v option to use volumes
 
 # Nginx
-docker run --rm -p 9980:80 nginx
-docker run --rm -p 9980:80 -v $(pwd)/web-template:/usr/share/nginx/html nginx
+docker run --rm -d -p 8080:80 nginx
+docker run --rm -d -p 8080:80 -v $(pwd)/web-template:/usr/share/nginx/html nginx
 
 # Apache HTTP server
-docker run --rm -p 9981:80 httpd:2.2-alpine
-docker run --rm -p 9981:80 -v $(pwd)/web-template:/usr/local/apache2/htdocs httpd:2.2-alpine
+docker run --rm -d -p 8081:80 httpd:2.4
+docker run --rm -d -p 8081:80 -v $(pwd)/web-template:/usr/local/apache2/htdocs httpd:2.4
